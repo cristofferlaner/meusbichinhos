@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    color: #143d01;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 20%;
+    background-color: #314725;
+}
+
+#header .container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#header a {
+    color: #fff;
+    font-size: 24px;
+}
+
+#header a:hover {
+    color: #64db6a;
+}
+
+#header .container a:nth-of-type(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.637);
+    padding-top: 15px;
+}
+
+#header .container img {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #64db6a;
+}
+
+#header .back {
+    position: absolute;
+    bottom: 5%;
+    right: 35%;
+}
+
+#about {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(assets/bgimage.jpg) center repeat;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 50px;
+}
+
+#about p {
+    text-indent: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+}
+
+#about h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+#about .container table, th, td {
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+#about th, td {
+    padding: 6px;
+}
+
+#about th {
+    background-color: #89b372;
+}
+
+#about td {
+    background-color: #fff;
+    text-align: center;
+}
+
+#imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px 0;
+    gap: 25px;
+}
+
+
+#imgs .photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 5%;
+    transition: .5s;
+}
+
+#imgs .photo img:hover {
+    transform: scale(1.2);
+}
+
+#page_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#page_container .perfis img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+#page_container .perfis h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#page_container .perfis p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#page_container .perfis p a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#page_container .perfis p a:hover {
+    color: #64db6a;
+}
+
+#page {
+    background: url(assets/bgimage.jpg) center repeat;
+}
